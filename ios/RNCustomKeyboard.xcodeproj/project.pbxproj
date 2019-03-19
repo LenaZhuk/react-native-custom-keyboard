@@ -200,9 +200,10 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/Libraries/Text/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../react-native/Libraries/Text/**";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNCustomKeyboard;
 				SKIP_INSTALL = YES;
@@ -216,9 +217,10 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/Libraries/Text/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../react-native/Libraries/Text/**";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNCustomKeyboard;
 				SKIP_INSTALL = YES;

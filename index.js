@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -35,10 +34,12 @@ class CustomKeyboardContainer extends Component {
   render() {
     const { tag, type } = this.props;
     const factory = keyboardTypeRegistry[type];
+
     if (!factory) {
       console.warn(`Custom keyboard type ${type} not registered.`);
       return null;
     }
+    
     const Comp = factory();
     return <Comp tag={tag} />;
   }
@@ -68,6 +69,9 @@ export class CustomTextInput extends Component {
   }
 
   onRef = ref => {
+    if (this.props.onCustomInputRef) {
+      this.props.onCustomInputRef(ref);
+    }
     this.input = ref;
   };
 
